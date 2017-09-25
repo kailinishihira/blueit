@@ -1,0 +1,13 @@
+<h2>Popular in United States</h2>
+
+<select (change)="onChange($event.target.value)">
+            <option value="popular" selected="selected">All</option>
+            <option value="random">Popular</option>
+            <option value="matureAnimals">Random</option>
+          </select>
+
+<div *ngFor="let post of posts" (click)="goToDetailPage(post)" class="panel panel-default" | category: filterByCategory>
+  <div class="panel-body">
+    <h3><em>{{post.title}}</em> {{post.category}}</h3>
+  </div>
+</div>
