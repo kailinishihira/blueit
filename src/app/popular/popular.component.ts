@@ -3,13 +3,15 @@ import { Post } from '../post.model';
 import { PostService } from '../post.service';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-splash',
-  templateUrl: './splash.component.html',
-  styleUrls: ['./splash.component.css'],
+  selector: 'app-popular',
+  templateUrl: './popular.component.html',
+  styleUrls: ['./popular.component.css'],
   providers: [PostService]
 })
-export class SplashComponent implements OnInit {
+
+export class PopularComponent implements OnInit {
 
   posts: Post[];
 
@@ -22,9 +24,5 @@ export class SplashComponent implements OnInit {
   goToDetailPage(clickedPost: Post) {
     this.router.navigate(['posts', clickedPost.id]);
   };
-
-// onChange(optionFromMenu) {
-//   this.filterByCategory = optionFromMenu;
-// }
 
 }

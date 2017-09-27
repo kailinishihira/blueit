@@ -9,13 +9,19 @@ import { AppComponent } from './app.component';
 import { SplashComponent } from './splash/splash.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { CategoryPipe } from './category.pipe';
+import { PopularComponent } from './popular/popular.component';
+import { RandomComponent } from './random/random.component';
+import { RandomPipe } from './random.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashComponent,
     PostDetailComponent,
-    CategoryPipe
+    CategoryPipe,
+    PopularComponent,
+    RandomComponent,
+    RandomPipe
   ],
   imports: [
     BrowserModule,
