@@ -10,8 +10,11 @@ import { SplashComponent } from './splash/splash.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { CategoryPipe } from './category.pipe';
 import { PopularComponent } from './popular/popular.component';
+<<<<<<< HEAD
 import { RandomComponent } from './random/random.component';
 import { RandomPipe } from './random.pipe';
+=======
+>>>>>>> 544a044710e39a63ae5e19352971fc5063a653c5
 
 @NgModule({
   declarations: [
@@ -19,9 +22,13 @@ import { RandomPipe } from './random.pipe';
     SplashComponent,
     PostDetailComponent,
     CategoryPipe,
+<<<<<<< HEAD
     PopularComponent,
     RandomComponent,
     RandomPipe
+=======
+    PopularComponent
+>>>>>>> 544a044710e39a63ae5e19352971fc5063a653c5
   ],
   imports: [
     BrowserModule,
