@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { SplashComponent } from './splash/splash.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { CategoryPipe } from './category.pipe';
+import { PopularComponent } from './popular/popular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashComponent,
     PostDetailComponent,
-    CategoryPipe
+    CategoryPipe,
+    PopularComponent
   ],
   imports: [
     BrowserModule,
