@@ -1,15 +1,5 @@
 <h2>Popular in United States</h2>
-<!--
-<select (change)="onChange($event.target.value)">
-            <option value="popular" selected="selected">All</option>
-            <option value="random">Popular</option>
-            <option value="matureAnimals">Random</option>
-          </select> -->
 
-<<<<<<< HEAD
-=======
-<!-- <app-popular></app-popular> -->
->>>>>>> 544a044710e39a63ae5e19352971fc5063a653c5
 <div *ngFor="let post of posts" (click)="goToDetailPage(post)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{post.title}}</em> {{post.category}}</h3>
